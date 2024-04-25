@@ -1,0 +1,6 @@
+RVfpga_Labs/**/include
+RVfpga_Labs/**/lib
+RVfpga_Labs/**/.pio
+RVfpga_Labs/**/.vscode
+RVfpga_Labs/**/test
+RVfpga_Labs/**/.gitignore
