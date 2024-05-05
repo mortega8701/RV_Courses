@@ -1,3 +1,5 @@
+*.o
+*.out
 RVfpga_Labs/**/include
 RVfpga_Labs/**/lib
 RVfpga_Labs/**/.pio
