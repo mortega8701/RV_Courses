@@ -21,7 +21,7 @@
 
 int main ( void )
 {
-  int switches_value, ctrl;
+  int switches_value;
   int R_val=0x20, G_val=0x20, B_val=0x20;
 
   WRITE(GPIO_INOUT, 0xFFFF);
@@ -41,25 +41,25 @@ int main ( void )
     */
 
     WRITE(RPTC4_HRC, 0x1F);
-    WRITE(RPTC4_LRC, R_val);
     R_val = (switches_value >> 10) & 0x1F;
     R_val = R_val + 0x20;
     WRITE(RPTC4_CTRL, 0x80);    // CNTRRST = 1
-    WRITE(RPTC4_CTRL, 0x9);    // INTE=1, OE=1, EN=1
+    WRITE(RPTC4_CTRL, 0x9);     // INTE=1, OE=1, EN=1
+    WRITE(RPTC4_LRC, R_val);
 
     WRITE(RPTC3_HRC, 0x1F);
-    WRITE(RPTC3_LRC, G_val);
     G_val = (switches_value >> 5) & 0x1F;
     G_val = G_val + 0x20;
     WRITE(RPTC3_CTRL, 0x80);    // CNTRRST = 1
-    WRITE(RPTC3_CTRL, 0x9);    // INTE=1, OE=1, EN=1
+    WRITE(RPTC3_CTRL, 0x9);     // INTE=1, OE=1, EN=1
+    WRITE(RPTC3_LRC, G_val);
 
     WRITE(RPTC2_HRC, 0x1F);
-    WRITE(RPTC2_LRC, B_val);
     B_val = switches_value & 0x1F;
-    B_val = B_val + 0x20;
+    B_val = B_val + 0x20; 
     WRITE(RPTC2_CTRL, 0x80);    // CNTRRST = 1
-    WRITE(RPTC2_CTRL, 0x9);    // INTE=1, OE=1, EN=1
+    WRITE(RPTC2_CTRL, 0x9);     // INTE=1, OE=1, EN=1
+    WRITE(RPTC2_LRC, B_val);
   }
 
   return(0);

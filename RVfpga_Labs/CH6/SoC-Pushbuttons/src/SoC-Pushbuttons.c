@@ -5,7 +5,7 @@
 
 #define GPIO2_BTN   0x80001800
 #define GPIO2_INOUT 0x80001808
-#define DELAY 1000
+#define DELAY 0x1000
 
 #define READ_GPIO(dir) (*(volatile unsigned *)dir)
 #define WRITE_GPIO(dir, value) { (*(volatile unsigned *)dir) = (value); }

@@ -1,0 +1,31 @@
+[*]
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Thu May  9 22:38:42 2024
+[*]
+[dumpfile] "/home/rvfpga/Documents/Labs/CH9/Count_Interrupts/.pio/build/swervolf_nexys/trace.vcd"
+[dumpfile_mtime] "Thu May  9 22:34:34 2024"
+[dumpfile_size] 351733118
+[savefile] "/home/rvfpga/Documents/Labs/CH9/Count_Interrupts/trace_test.gtkw"
+[timestart] 0
+[size] 1000 600
+[pos] -1 -1
+*-17.515961 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] rvfpgasim.
+[treeopen] rvfpgasim.swervolf.
+[sst_width] 233
+[signals_width] 150
+[sst_expanded] 1
+[sst_vpaned_height] 144
+@28
+rvfpgasim.swervolf.syscon.gpio_irq
+rvfpgasim.swervolf.syscon.ptc_irq
+rvfpgasim.swervolf.syscon.irq_gpio_enable
+rvfpgasim.swervolf.syscon.irq_ptc_enable
+rvfpgasim.swervolf.syscon.o_sw_irq4
+rvfpgasim.swervolf.syscon.o_sw_irq3
+@22
+rvfpgasim.swervolf.syscon.i_wb_dat[31:0]
+@23
+rvfpgasim.swervolf.syscon.i_wb_sel[3:0]
+[pattern_trace] 1
+[pattern_trace] 0
